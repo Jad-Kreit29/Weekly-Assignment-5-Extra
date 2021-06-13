@@ -10,13 +10,13 @@ def clear():
 
 import math
 diameter = 0
-circumferance = 0
+circumference = 0
 area = 0
 case = 1
 reask = 0
 
 while True:
-    case = int(input("Type '1' for area or type '2' for circumferance: "))
+    case = int(input("Type '1' for area or type '2' for circumference: "))
     if case == 1:
       diameter = int(input("What's the diameter of the circle? " ))
       print ("Diameter:", diameter)
@@ -29,8 +29,8 @@ while True:
       print("Diameter", diameter)
       radius = int(diameter / 2)
       print("Radius is:", radius)
-      circumferance = 2 * math.pi * radius
-      print("Circumferance of the circle is:", circumferance)
+      circumference = 2 * math.pi * radius
+      print("Circumference of the circle is:", circumference)
     while True:
         reask = str(input("New Calculation? (y/n): "))
         if reask in ("y", "n"):
