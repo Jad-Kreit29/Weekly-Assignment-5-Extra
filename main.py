@@ -1,3 +1,5 @@
+import math
+
 from os import system, name
 
 from time import sleep
@@ -8,8 +10,6 @@ def clear():
     else:
         _ = system('clear')
 
-
-import math
 
 diameter = 0
 circumference = 0
