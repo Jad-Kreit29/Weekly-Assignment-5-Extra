@@ -4,6 +4,7 @@ from os import system, name
 
 from time import sleep
 
+
 def clear():
     if name == 'nt':
         _ = system('cls')
@@ -21,16 +22,16 @@ while True:
     try:
         case = int(input("Type '1' for area or type '2' for circumference: "))
         if case == 1:
-            diameter = int(input("What's the diameter of the circle? " ))
+            diameter = float(input("What's the diameter of the circle? "))
             print("Diameter:", diameter)
-            radius = int(diameter / 2)
+            radius = float(diameter / 2)
             print("Radius:", radius)
             area = math.pi * radius ** 2
             print("Area of the circle is:", area)
         elif case == 2:
-            diameter = int(input("What's the diameter of the circle? "))
+            diameter = float(input("What's the diameter of the circle? "))
             print("Diameter:", diameter)
-            radius = int(diameter / 2)
+            radius = float(diameter / 2)
             print("Radius:", radius)
             circumference = 2 * math.pi * radius
             print("Circumference of the circle is:", circumference)
