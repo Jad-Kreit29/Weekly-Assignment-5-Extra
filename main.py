@@ -1,7 +1,6 @@
 import math
 from os import name, system
 from time import sleep
-import math
 
 
 def clear():
