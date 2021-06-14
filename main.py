@@ -1,39 +1,39 @@
 import math
 
-from os import system, name
+from os import name, system
 
 from time import sleep
 
 
 def clear():
-    if name == 'nt':
-        _ = system('cls')
+    if name == "nt":
+        _ = system("cls")
     else:
-        _ = system('clear')
+        _ = system("clear")
 
 
 diameter = 0
 circumference = 0
 area = 0
 case = 1
-reask = 0
+reask = "0"
 
 while True:
     try:
         case = int(input("Type '1' for area or type '2' for circumference: "))
         if case == 1:
-            diameter = float(input("What's the diameter of the circle? "))
+            diameter = int(input("What's the diameter of the circle? "))
             print("Diameter:", diameter)
-            radius = float(diameter / 2)
+            radius = int(diameter // 2)
             print("Radius:", radius)
-            area = math.pi * radius ** 2
+            area = int(math.pi * radius ** 2)
             print("Area of the circle is:", area)
         elif case == 2:
-            diameter = float(input("What's the diameter of the circle? "))
+            diameter = int(input("What's the diameter of the circle? "))
             print("Diameter:", diameter)
-            radius = float(diameter / 2)
+            radius = int(diameter // 2)
             print("Radius:", radius)
-            circumference = 2 * math.pi * radius
+            circumference = int(2 * math.pi * radius)
             print("Circumference of the circle is:", circumference)
         else:
             print("Please input a real option")
