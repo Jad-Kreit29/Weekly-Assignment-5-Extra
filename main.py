@@ -10,9 +10,9 @@ def clear():
         _ = system("clear")
 
 
-diameter = 0
-circumference = 0
-area = 0
+diameter = 1.0
+circumference = 1.0
+area = 1.0
 case = 1
 reask = "0"
 
