@@ -24,14 +24,14 @@ while True:
             print("Diameter:", diameter)
             radius = int(diameter // 2)
             print("Radius:", radius)
-            area = int(math.pi * radius ** 2)
+            area = round((math.pi * radius ** 2), 2)
             print("Area of the circle is:", area)
         elif case == 2:
             diameter = int(input("What's the diameter of the circle? "))
             print("Diameter:", diameter)
             radius = int(diameter // 2)
             print("Radius:", radius)
-            circumference = int(2 * math.pi * radius)
+            circumference = round((2 * math.pi * radius), 2)
             print("Circumference of the circle is:", circumference)
         else:
             print("Please input a real option")
